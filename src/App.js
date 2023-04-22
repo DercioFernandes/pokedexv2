@@ -69,7 +69,7 @@ const PokeList = ({ pokemons }) => {
   console.log(pokemons);
 
   if (pokemons.length === 0) {
-    return <div>Loading ...</div>;
+    return <div>Loading...</div>;
   }
 
   return (
@@ -117,9 +117,5 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     </div>
   );
 };
-
-
-
-
 
 export default App;

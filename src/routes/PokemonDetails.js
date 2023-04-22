@@ -7,7 +7,7 @@ const PokemonDetails = ({ pokemons }) => {
     const pokemon = pokemons.find((pokemon) => pokemon.id == id);
   
     if (!pokemon) {
-      return <div>Loading ...</div>;
+      return <div>Loading...</div>;
     }
   
     const { name, sprites, stats, types } = pokemon;
