@@ -1,0 +1,148 @@
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+.poke-card{
+  max-width: 50%;
+  float:left;
+  padding: 5%;
+  border-radius: 25px;
+  margin:2%;
+}
+
+.poke-card h3{
+  color: white;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+.fire{
+  background-color: rgb(255, 0, 1);
+}
+
+.water{
+  background-color: rgb(101, 0, 255);
+}
+
+.grass{
+  background-color: rgb(51, 254, 0);
+}
+
+.bug{
+  background-color: chartreuse;
+}
+
+.normal{
+  background-color: grey;
+}
+
+.flying{
+  background-color: aqua;
+}
+
+.fighting{
+  background-color: red;
+}
+
+.poison{
+  background-color: purple;
+}
+
+.electric{
+  background-color: yellow;
+}
+
+.ground{
+  background-color: burlywood;
+}
+
+.rock{
+  background-color: brown;
+}
+
+.psychic{
+  background-color: blueviolet;
+}
+
+.ice{
+  background-color: aquamarine;
+}
+
+.ghost{
+  background-color: whitesmoke;
+}
+
+.steel{
+  background-color: grey;
+}
+
+.dragon{
+  background-color: darkmagenta;
+}
+
+.dark{
+  background-color: darkorchid;
+}
+
+.fairy{
+  background-color: pink;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  flex-flow: center;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.pagination button {
+  background-color: white;
+  padding: 50%;
+  margin:10px;
+  border-radius: 25%;
+  border-style: none;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+
+.active button{
+  background-color: navajowhite;
+  border-radius: 25%;
+  border-style: none;
+}
+
+li{
+  list-style-type: none;
+  margin: 1%;
+}
+
+.divPag{
+  position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
+.poke-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  align-items: center;
+  border-radius: 25%;
+}
+
+.pokeSprite{
+  background-color: white;
+  max-width: fit-content;
+}
+
+.pokemonStats{
+  background-color: grey;
+}
