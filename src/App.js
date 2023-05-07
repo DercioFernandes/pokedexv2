@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.css";
+import ReactDOM from "react-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import PokemonDetails from './routes/PokemonDetails.js';
 import { BrowserRouter as Router, Switch, Route, Link, useParams } from "react-router-dom";
 
@@ -47,8 +49,10 @@ class App extends React.Component {
   }
 
   render() {
+    const router = createHashRouter();
+
     return (
-      <Router>
+      <RouterProvider router={router}>
         <div>
           <Switch>
             <Route exact path="/">
@@ -60,7 +64,7 @@ class App extends React.Component {
             </Route>
           </Switch>
         </div>
-      </Router>
+      </RouterProvider>
     );
   }
 }
