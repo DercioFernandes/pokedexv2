@@ -3,7 +3,7 @@ import "./styles.css";
 import ReactDOM from "react-dom";
 import { RouterProvider, createHashRouter } from "react-router-dom";
 import PokemonDetails from './routes/PokemonDetails.js';
-import { BrowserRouter as Router, Switch, Route, Link, useParams } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useParams } from "react-router-dom";
 
 class App extends React.Component {
   constructor(props) {
@@ -54,7 +54,7 @@ class App extends React.Component {
     return (
       <RouterProvider router={router}>
         <div>
-          <Switch>
+          <Routes>
             <Route exact path="/">
               <PokeList pokemons={this.state.pokemons} />
               <Pagination currentPage={this.state.currentPage} totalPages={this.state.totalPages} onPageChange={this.handlePageChange} />
@@ -62,7 +62,7 @@ class App extends React.Component {
             <Route path="/pokemon/:id">
               <PokemonDetails pokemons={this.state.pokemons} />
             </Route>
-          </Switch>
+          </Routes>
         </div>
       </RouterProvider>
     );

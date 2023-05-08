@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams, HashRouter, Switch, Route } from "react-router-dom";
+import { Link, useParams, HashRouter, Routes, Route } from "react-router-dom";
 
 const PokemonDetails = ({ pokemons }) => {
   const { id } = useParams();
@@ -35,11 +35,11 @@ export default function PokemonDetailsComponent() {
   return (
     <HashRouter>
       <div>
-        <Switch>
+        <Routes>
           <Route path="/pokemon/:id">
             <PokemonDetails pokemons={[]} />
           </Route>
-        </Switch>
+        </Routes>
       </div>
     </HashRouter>
   );
